@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <main>
+    <!-- Glavni container.. -->
+    <div class="article-preview-container">
+
+      <!-- div-za container koji sadrzi 'drawers' sliku koja ide na stranicu ..koja zauzima skoro pa 1/2 citave stranice, code: -->
+      <div class="article-img-container">
+        <img src="./images/drawers.jpg" alt="Image of drawers" class="drawers-img">
+      </div>
+
+      <!-- Code-Snippet za container kojim se obuhvata naslov, paragraph i jos jedan container koji sadrzi podatke o autoru .. -->
+      <div class="article-content-container">
+          <h1 class="main-heading">
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+          </h1>
+          <p class="preview-text">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. 
+            Why not spice it up with this article and add some plants, art or even a new coat of paint?
+          </p>
+          
+          <!-- Code-Snippet, container kojim se obuhvataju podaci o samom autoru.. avatar-slika autora, jedan header i jedan paragraph.. -->
+          <!-- Zatim obuhvata i share-button, kao i share-pop-up-bar-menu .. -->
+          <div class="author-info">
+
+            <!-- Container kojim obuhvatamo avatar, date i name.. tako da kasnije prvo pozicioniramo container, pa tek onda elemente unutar njega.. -->
+            <div class="avatar-date-name-container">
+              <img src="./images/avatar-michelle.jpg" alt="Avatar of Michelle" class="author-avatar-img">
+              
+              <div class="name-date-container">
+                <h4 class="author-name">Michelle Appleton</h4>
+                <p class="preview-text">28 Jun 2020</p>
+              </div>
+           </div>
+
+            <!-- Social Share Bar -->
+            <div class="share-shape-container display-none">
+              <div class="share-icons-container">
+                <p class="share-text-p"> SHARE </p>
+                <a href="#">
+                  <img src="./images/icon-facebook.svg" alt="Facebook icon" class="share-icon">
+                </a>
+                <a href="#">
+                  <img src="./images/icon-twitter.svg" alt="Twitter icon" class="share-icon">
+                </a>
+                <a href="#">
+                  <img src="./images/icon-pinterest.svg" alt="Pinterest icon" class="share-icon">
+                </a>
+              </div>
+            </div>
+            <!-- Social Share Bar -->
+            
+            <div id="desktop-share-button" class="share-btn-container">
+                <img src="./images/icon-share.svg" alt="Share icon" class="share-icon">
+            </div>
+          </div>
+          <!-- Mobile Author Area -->
+          <div class="mobile-author-area">
+            <div class="mobile-avatar-container">
+              <img src="./images/avatar-michelle.jpg" alt="Avatar of Michelle" class="author-avatar-image">
+              <div class="mobile-name-date-container">
+                <h4 class="author-name">Michelle Appleton</h4>
+                <p class="preview-text">28 Jun 2020</p>
+              </div>
+            </div>
+            <div class="mobile-share-btn-container">
+              <img src="./images/icon-share.svg" alt="Share icon" class="share-icon">
+            </div>
+          </div>
+          <!-- Mobile Author Area -->
+          <!-- Mobile Share Bar -->
+          <div class="mobile-social-sharing-bar">
+            <div class="mobile-share-icons-container">
+              <p class="share-text-p"> SHARE </p>
+                <a href="#">
+                  <img src="./images/icon-facebook.svg" alt="Facebook icon" class="share-icon">
+                </a>
+                <a href="#">
+                  <img src="./images/icon-twitter.svg" alt="Twitter icon" class="share-icon">
+                </a>
+                <a href="#">
+                  <img src="./images/icon-pinterest.svg" alt="Pinterest icon" class="share-icon">
+                </a>
+            </div>
+            <div class="mobile-social-sharing-btn-container">
+              <img src="./images/icon-share.svg" alt="Share icon" class="share-icon">
+            </div>
+          </div>
+          <!-- Mobile Share Bar -->          
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./scripts/index.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AT95BL" target="blank">AT95BL</a>.
+  </div>
+
+</body>
+</html>
